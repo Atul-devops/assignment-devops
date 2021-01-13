@@ -13,6 +13,9 @@ aws.tf, provider.tf and variables.tf will consists of aws version , the credenti
 
 To run ansible use command ansible-playbook -i host_ip -u ansible windows.yaml or ansible-playbook windows.yml
 
+Ensure you have an SSH public key at ~/.ssh/id_rsa.pub.
+https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 To run the terraform use command firstly to initialize  use terraform init, then terraform plan and finally terraform apply to see final results.
 
 But here you can run deploy.sh to run terraform and ansible playbook
