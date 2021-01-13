@@ -13,7 +13,7 @@ resource "aws_instance" "windows-instance" {
   key_name                    = "${var.aws-security-key-name}"
   associate_public_ip_address = true
   monitoring                  = true
-  user_data                   = "${file("script.ps1")}"
+  user_data                   = "${file("OctopusTentacle.ps1")}"
 
   root_block_device {
     volume_size           = 128
