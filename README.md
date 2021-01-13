@@ -15,4 +15,4 @@ To run ansible use command ansible-playbook -i host_ip -u ansible windows.yaml o
 
 To run the terraform use command firstly to initialize  use terraform init, then terraform plan and finally terraform apply to see final results.
 
-But here you can use ./deploy.sh to run terraform and ansible playbook
+But here you can run deploy.sh to run terraform and ansible playbook
