@@ -16,6 +16,3 @@ cd ../ansible
 TF_STATE=../terraform/terraform.tfstate ansible-playbook "--inventory-file=$(which terraform-inventory)" windows.yml
 
 echo "Success!"
-
-cd ../terraform
-terraform output
