@@ -1,4 +1,9 @@
 # Specify the provider and access details
 provider "aws" {
-  version = "~> 0.12"
-}
+        access_key = "access_key"
+        secret_key = "secret_key"
+        region = "region"
+
+  version = "~> 2.63"
+
+  }
