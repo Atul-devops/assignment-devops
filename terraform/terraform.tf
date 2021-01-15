@@ -15,7 +15,7 @@ resource "aws_instance" "windows-instance" {
   instance_type               = "${aws-instance-type}"
   associate_public_ip_address = true
   monitoring                  = true
-  user_data                   = "${file("octopusTentacle.ps1")}"
+  user_data                   = "${file("octopus-tentacle.ps1")}"
     
   resource "aws_key_pair" "auth" {
   key_name   = "${var.key_name}"
