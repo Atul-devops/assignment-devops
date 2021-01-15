@@ -40,6 +40,7 @@ resource "aws_instance" "windows-instance" {
     connection {
       user = "${local.vm_user}
 }
+}
 
   root_block_device {
     volume_size           = 128
@@ -53,10 +54,5 @@ resource "aws_instance" "windows-instance" {
 
 }
 
-variable "aws-subnet-id" {}
-variable "aws-vpc-security-group-id" {}
-variable "aws-instance-type" {}
-variable "aws-security-key-name" {}
-  }
 
-}
+
